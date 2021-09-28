@@ -9,7 +9,7 @@ console.log(__dirname)
 
 const mainPath=path.join(__dirname,'../public')
 const app=express()
-
+const port= process.env.PORT
 app.engine(
   "hbs",
   exphbs({
@@ -61,6 +61,6 @@ if(!address){
     })
 
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log('Server is up on port 3000...')
 })
