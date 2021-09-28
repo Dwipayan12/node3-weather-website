@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather app</title>
+        <link rel="icon" href="/img/weather.png">
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div id="content">
+        <h1 "color: #333333;" "font-family: arial;" "max-width: 650px;">Weather Report</h1>
+        <br>
+         <form class="mb-3" action="/weather" method="GET">
+             <input class="form-control" id="address" name=address placeholder="Location">
+             <br>
+             <button  class="btn btn-primary" type="submit">Search</button>
+         </form>
+         <div class="card">
+         <div class="card-body">
+             <h2>{{error}}</h2>
+             <h3>{{temp}}</h3>
+             <h4>{{location}}</h4>
+         </div>
+         </div>
+          <div class="container-fluid"><footer>Created by Dwipayan Santra</footer></div>
+        </div>
+    </body>
+</html>
